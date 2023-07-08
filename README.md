@@ -20,19 +20,5 @@ So for the next 100 days, I will create projects based on FreeCodeCamp courses:
 Daily progress log will be maintained here
 
 ## Day 1 
-Date: 8 July 2023
-Project: CatPhotoApp
-Status: Done
-Share project
-- [ ]  demo page
-- [x]  github repo
-- [ ]  blog post
+8 July 2023. Project: CatPhotoApp
 
-#100daysofcode :
-- [ ]  tweet
-- [ ]  respond to 2 tweets
-
-Freecodecamp forum
-
-- [ ]  post my progress
-- [ ]  help out another post
