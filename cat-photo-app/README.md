@@ -1,3 +1,18 @@
+## Status
+Share project
+- [x]  demo page
+- [x]  github repo
+- [ ]  blog post
+
+#100daysofcode :
+
+- [x]  tweet
+- [x]  respond to 2 tweets
+
+Freecodecamp forum
+
+- [ ]  post my progress
+- [ ]  help out another post
 ## Learning notes
 
 - basic html file is wrapped inside a `html` tag, and the main content inside the `body` tag inside that html
