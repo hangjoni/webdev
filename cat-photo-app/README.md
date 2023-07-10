@@ -11,8 +11,8 @@ Share project
 
 Freecodecamp forum
 
-- [ ]  post my progress
-- [ ]  help out another post
+- [x]  post my progress
+- [x]  help out another post
 ## Learning notes
 
 - basic html file is wrapped inside a `html` tag, and the main content inside the `body` tag inside that html

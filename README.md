@@ -7,6 +7,7 @@ So for the next 100 days, I will create projects based on FreeCodeCamp courses:
 - [JavaScript Algorithms and Data Structures Projects](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#functional-programming) 5 projects
 - [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/) 5 projects
 - [Back End Development and APIs Projects](https://www.freecodecamp.org/learn/back-end-development-and-apis/) 5 projects
+- [Coding Interviewe Take Home Projects](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/) 20 projects
 
 # For staying motivated:
 - join the 100 days of code challenge
@@ -20,6 +21,9 @@ So for the next 100 days, I will create projects based on FreeCodeCamp courses:
 Daily progress log will be maintained here
 
 ## Day 1 
-8 July 2023. Project: CatPhotoApp. I'm hosting the projects with [Github page](https://hangjoni.github.io/webdev/)
+8 July 2023. Project: CatPhotoApp. 
+I'm hosting the projects with [Github page](https://hangjoni.github.io/webdev/)
 ## Day 2
 9 July 2023. Project: Cafe Menu. 
+## Day 3
+10 July 2023: Project: Survey Form. Completed the html part. Will work on CSS part tomorrow. Had fun playing on flexboxfroggy.com while learning CSS.

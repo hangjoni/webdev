@@ -6,7 +6,7 @@ Share project
 
 #100daysofcode :
 
-- [ ]  tweet
+- [x]  tweet
 - [ ]  respond to 2 tweets
 
 Freecodecamp forum
