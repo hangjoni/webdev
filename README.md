@@ -24,6 +24,6 @@ Daily progress log will be maintained here
 8 July 2023. Project: CatPhotoApp. 
 I'm hosting the projects with [Github page](https://hangjoni.github.io/webdev/)
 ## Day 2
-9 July 2023. Project: Cafe Menu. 
+9 July 2023. Project: [Cafe Menu](https://hangjoni.github.io/webdev/cafe-menu/index.html). 
 ## Day 3
-10 July 2023: Project: Survey Form. Completed the html part. Will work on CSS part tomorrow. Had fun playing on flexboxfroggy.com while learning CSS.
+10 July 2023: Project: [Survey Form](https://hangjoni.github.io/webdev/survey-form/index.html). Completed the html part. Will work on CSS part tomorrow. Had fun playing on flexboxfroggy.com while learning CSS.
