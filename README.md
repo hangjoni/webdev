@@ -27,3 +27,11 @@ I'm hosting the projects with [Github page](https://hangjoni.github.io/webdev/)
 9 July 2023. Project: [Cafe Menu](https://hangjoni.github.io/webdev/cafe-menu/index.html). 
 ## Day 3
 10 July 2023: Project: [Survey Form](https://hangjoni.github.io/webdev/survey-form/index.html). Completed the html part. Will work on CSS part tomorrow. Had fun playing on flexboxfroggy.com while learning CSS.
+
+## Day 4
+11 July 2023. Project: [Rothko Painting](https://hangjoni.github.io/webdev/rothko-painting/index.html).
+Finding CSS typing tedius, I was looking for a hack - copying CSS from websites, Tailwind CSS, Bootstrap, ... Then I realized I still to know CSS even with though frameworks. So back to FreeCodeCamp it is. Wonder if there are more fun ways to learn CSS?
+
+## Day 5
+12 July 2023. Project [Photo Album](https://hangjoni.github.io/webdev/photo-album/index.html)
+Play flexboxfroggy.com.
