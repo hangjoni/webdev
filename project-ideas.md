@@ -1,0 +1,2 @@
+- clone this page [Natours](https://github.com/felipefialho/frontend-challenges)
+- Create a simple game with pure HTML CSS and JS

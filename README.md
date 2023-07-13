@@ -35,3 +35,6 @@ Finding CSS typing tedius, I was looking for a hack - copying CSS from websites,
 ## Day 5
 12 July 2023. Project [Photo Album](https://hangjoni.github.io/webdev/photo-album/index.html)
 Play flexboxfroggy.com.
+
+## Day 6
+13 July 2023. Project [Nutritional Lable](https://hangjoni.github.io/webdev/nutritional-label/index.html)
