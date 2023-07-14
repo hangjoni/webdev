@@ -38,3 +38,6 @@ Play flexboxfroggy.com.
 
 ## Day 6
 13 July 2023. Project [Nutritional Lable](https://hangjoni.github.io/webdev/nutritional-label/index.html)
+
+## Day 7
+14 July 2023. Project [Tribute Page](https://hangjoni.github.io/webdev/tribute-page/index.html) to Plastic.
