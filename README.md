@@ -41,3 +41,9 @@ Play flexboxfroggy.com.
 
 ## Day 7
 14 July 2023. Project [Tribute Page](https://hangjoni.github.io/webdev/tribute-page/index.html) to Plastic.
+
+## Day 8
+16 July 2023. Project [Balance Sheet](https://hangjoni.github.io/webdev/balance-sheet/index.html)
+
+## Day 9
+17 July 2023. Project [Picasso Painting](https://hangjoni.github.io/webdev/picasso-painting/index.html)

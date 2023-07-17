@@ -32,8 +32,7 @@ Freecodecamp forum
 		<main>
 			<section>
 			</section>
-		</main>
-	</body>
+        </main>
 		<footer>
 		</footer>
 	</body>
