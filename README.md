@@ -47,3 +47,6 @@ Play flexboxfroggy.com.
 
 ## Day 9
 17 July 2023. Project [Picasso Painting](https://hangjoni.github.io/webdev/picasso-painting/index.html)
+
+## Day 10
+21 July 2023. Project [Piano](https://hangjoni.github.io/webdev/piano/index.html)
