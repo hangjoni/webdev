@@ -50,3 +50,6 @@ Play flexboxfroggy.com.
 
 ## Day 10
 21 July 2023. Project [Piano](https://hangjoni.github.io/webdev/piano/index.html)
+
+## Day 11
+25 July 2023. Project [Technical Documentation](https://hangjoni.github.io/webdev/technical-documentation/index.html)
