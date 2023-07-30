@@ -53,3 +53,9 @@ Play flexboxfroggy.com.
 
 ## Day 11
 25 July 2023. Project [Technical Documentation](https://hangjoni.github.io/webdev/technical-documentation/index.html)
+
+# Day 12, 13, 14
+Learn backend with Express JS
+
+# Day 14, 15
+30 July 2023. Project [City Skyline](https://hangjoni.github.io/webdev/city-skyline/index.html)
