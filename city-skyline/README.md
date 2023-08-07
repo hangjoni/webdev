@@ -1,6 +1,6 @@
 # Learning notes
 - `height: 100vh` to set content to the whole view port. This will make the body element fill the whole page.
-- overflow: hidden` to hide scroll bars that appear when something extends past the viewport
+- `overflow: hidden` to hide scroll bars that appear when something extends past the viewport
 - CSS variable. This is how to define 
 ```.bb1 {
     --building-color: #999;

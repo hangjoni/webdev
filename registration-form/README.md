@@ -1,0 +1,12 @@
+## Learning Notes
+- browsers might add margin so even if we use 100% width, the actual width of the element might be larger than full width of the page causing the need for using scrollbar. Hence add `margin: 0` when setting `width: 100%`
+- `display: block` will get elements to appear on separate line
+- `rem` = root em which is the font size of hte html element
+- `<input />` is a self closing tag
+- `<label for="some-id">` `<input id="some-id">`
+- form validation using `required` attribute and using this attribute `pattern = "[a-z0-5]{8,}"` which is a regex that match patterns of 8 characters long containing a-z letters or 0-5 digits
+- To relate radio buttons, give them the same name
+- to accept file upload as an input use `<input type="file">`
+- to make exception, simply add a class and use `width: unset;` as a property for that class
+- css selector using attribute value `input[type="submit"]`
+- to center an element: `margin: 0 auto;`
