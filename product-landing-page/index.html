@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
     <header id="header">
-        <div class="logo">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo" class="logo-img">
-            <nav class="top-nav">
-                <ul>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                    <li><a href="#pricing" class="pricing">Pricing</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img class="logo-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
+        <section class="get-started-form">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <input type="email" class="email" placeholder="Enter your email address">
+            <button class="get-started-button">Get Started</button>
+        </section>
         <section class="features">
             <div class="row">
                 <div class="icon">
@@ -40,7 +45,7 @@
             </div>
             <div class="row">
                 <div class="icon">
-                    <i class="fa fa-3x fa-battery"></i>
+                    <i class="fa fa-3x fa-battery-full"></i>
                 </div>
                 <div class="desc">
                     <h2>Quality Assurance</h2>
@@ -55,41 +60,43 @@
             <div class="product" id="tenor">
                 <div class="level">Tenor Trombone</div>
                 <h2>$600</h2>
-                <ol>
+                <ul>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum dolor.</li>
                     <li>Lorem ipsum.</li>
-                </ol>
+                </ul>
                 <button class="btn">Select</button>
             </div>
             <div class="product" id="bass">
                 <div class="level">Bass Trombone</div>
                 <h2>$900</h2>
-                <ol>
+                <ul>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum dolor.</li>
                     <li>Lorem ipsum.</li>
-                </ol>
+                </ul>
                 <button class="btn">Select</button>
             </div>
             <div class="product" id="valve">
                 <div class="level">Valve Trombone</div>
                 <h2>$1200</h2>
-                <ol>
+                <ul>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum dolor.</li>
                     <li>Lorem ipsum.</li>
-                </ol>
+                </ul>
                 <button class="btn">Select</button>
             </div>
         </section>
         <footer>
-            <ul><a href="#">Privacy</a></ul>
-            <ul><a href="#">Terms</a></ul>
-            <ul><a href="#">Contact</a></ul>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
             <span>Copyright 2016, Original Trombones</span>
         </footer>
     </div>

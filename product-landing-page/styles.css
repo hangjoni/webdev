@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+    --grey-background: #ddd;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif
+}
+
+
+.logo-img {
+    width: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-nav > ul > li {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black
+}
+
+.get-started-form, .features, .how-it-works {
+    display: grid; 
+    gap: 1rem;
+    place-items: center;
+    margin: 10px;
+}
+
+input {
+    width: 15rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+button {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: orange;
+}
+
+.row {
+    width: clamp(20rem, 80vw, 800px);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.icon {
+    margin: auto;
+    color: darkorange;
+}
+
+iframe {
+    aspect-ratio: 16/9;
+    margin: 1rem auto 1rem auto;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-evenly;
+    /* width: minmax(80%, 1000px);
+    margin: auto;    */
+}
+
+.pricing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.product * {
+    text-align: center;
+
+}
+
+.level {
+    padding: 0.5rem;
+    background-color: var(--grey-background);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%
+}
+
+.btn {
+    width: 8em;
+    text-transform: uppercase;
+}
+
+footer * {
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: var(--grey-background);
+}
+
+footer * {
+    background-color: var(--grey-background);
+}
+
+footer span {
+    color: grey;
+    font-size: 0.9rem;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    .pricing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
