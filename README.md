@@ -59,3 +59,23 @@ Learn backend with Express JS
 
 # Day 14, 15
 30 July 2023. Project [City Skyline](https://hangjoni.github.io/webdev/city-skyline/index.html)
+
+# Day 16, 17, 18
+31 July - 2 Aug
+VueJS
+
+# Day 19, 20
+3 Aug
+Grid & Flex revision
+
+# Day 21, 22
+4, 5 Aug
+Magazine
+
+# Day 23, 24
+6, 7 Aug
+Project [Product Landing Page](https://hangjoni.github.io/webdev/product-landing-page/index.html)
+
+# Day 25 - 28
+8 - 11 Aug 
+Project [Music Band Page](https://hangjoni.github.io/webdev/music-band-page/index.html)
