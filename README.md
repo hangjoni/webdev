@@ -77,5 +77,11 @@ Magazine
 Project [Product Landing Page](https://hangjoni.github.io/webdev/product-landing-page/index.html)
 
 # Day 25 - 28
-8 - 11 Aug 
+8 - 12 Aug 
 Project [Music Band Page](https://hangjoni.github.io/webdev/music-band-page/index.html)
+
+# Day 29
+13 Aug
+Finished learning basic JS
+Project [Ferris Wheel](https://hangjoni.github.io/webdev/ferris-wheel/index.html)
+Project [Penguin](https://hangjoni.github.io/webdev/penguin/index.html)
