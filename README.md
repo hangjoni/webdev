@@ -85,3 +85,11 @@ Project [Music Band Page](https://hangjoni.github.io/webdev/music-band-page/inde
 Finished learning basic JS
 Project [Ferris Wheel](https://hangjoni.github.io/webdev/ferris-wheel/index.html)
 Project [Penguin](https://hangjoni.github.io/webdev/penguin/index.html)
+
+# Day 30
+14 Aug 
+Continue learning JavaScript, Vue and MongoDB
+- Finished these [challenges](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Events) about JS events
+Project [Event handler with JavaScript](https://codepen.io/hangjoni/pen/bGQXoGK)
+
+To continue: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
