@@ -93,3 +93,7 @@ Continue learning JavaScript, Vue and MongoDB
 Project [Event handler with JavaScript](https://codepen.io/hangjoni/pen/bGQXoGK)
 
 To continue: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+
+## Day 31
+15 Aug
+Project [Portfolio Page](https://hangjoni.github.io/webdev/improved.html)

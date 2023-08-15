@@ -3,15 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/947b89d68e.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-    <h1>100 days of Web Dev</h1>
-    <a href="music-band-page/index.html">
-        <iframe src="music-band-page/index.html"></iframe>
-    </a>
-    <a href="music-band-page/index.html">
-        <iframe src="penguin/index.html"></iframe>
-    </a>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>About</li>
+            <li>Work</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hey I am Joni</h1>
+        <p>a web developer, deep learning enthusiast, a tinkerer, and student for life</p>
+    </section>
+    <section id="projects">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="projects-grid">
+            <a href="product-landing-page/index.html">
+                <iframe src="product-landing-page/index.html" frameborder=""></iframe>
+                Product Landing Page
+            </a>
+            <a href="city-skyline/index.html">
+                <iframe src="city-skyline/index.html" frameborder=""></iframe>
+                City Skyline
+            </a>
+            <a href="survey-form/index.html">
+                <iframe src="survey-form/index.html" frameborder=""></iframe>
+                Survey Form
+            </a>
+            <a href="cafe-menu/index.html">
+                <iframe src="cafe-menu/index.html" frameborder=""></iframe>
+                Cafe Menu
+            </a>
+            <a href="penguin/index.html">
+                <iframe src="penguin/index.html" frameborder=""></iframe>
+                Penguin
+            </a>
+            <a href="tribute-page/index.html">
+                <iframe src="tribute-page/index.html" frameborder=""></iframe>
+                Tribute Page
+            </a>
+        </div>
+        <button>
+            <a href="index.html" class="btn-show-all">Show all ></a>
+        </button>
+    </section>
+    <section id="contact">
+        <div id="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div id="contact-links">
+            <a href="" class="btn contact-details">
+                <i class="fa-brands fa-twitter"></i> Twitter
+            </a>
+            <a href="" class="btn contact-details">
+                <i class="fa-brands fa-github"></i> Github
+            </a>
+        </div>
+    </section>
+    <footer></footer>
+    
 </body>
 </html>
