@@ -97,3 +97,10 @@ To continue: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchron
 ## Day 31
 15 Aug
 Project [Portfolio Page](https://hangjoni.github.io/webdev/improved.html)
+
+## Day 32
+16 Aug
+- Reading up on JavaScript promises and event loop
+- Project [Flexbox photo gallery](https://hangjoni.github.io/webdev/flexbox-photo-gallery/index.html)
+following this template on Codepen. Not happy yet because margins keep disppearing, to revisit tomorrow
+- Learned about mix-blend-mode which makes overlapping elements look like they are transparent
