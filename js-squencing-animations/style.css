@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    }
+  
+  #alice-container {
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+      "a1 . ."
+      ". a2 ."
+      ". . a3";
+  }
+
+img {
+  width: 33vw;
+}
+  
+  #alice1 {
+    grid-area: a1;
+  }
+  
+  #alice2 {
+    grid-area: a2;
+  }
+  
+  #alice3 {
+    grid-area: a3;
+  }
