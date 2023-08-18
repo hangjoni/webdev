@@ -112,3 +112,5 @@ following this template on Codepen. Not happy yet because margins keep disppeari
 ## Day 34
 18 Aug
 - JavaScript promise, async await
+- Project [Animated Alices in sequence using JavaScript Promise](https://hangjoni.github.io/webdev/js-sequencing-animations/index.html)
+- [Blog post](https://hangjoni.github.io/webdev/js-sequencing-animations/README.md) about Promise and asynchronous functions in JavaScript 
