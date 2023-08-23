@@ -13,6 +13,10 @@ const alice1 = document.querySelector("#alice1");
 const alice2 = document.querySelector("#alice2");
 const alice3 = document.querySelector("#alice3");
 
+alice1.animate(aliceTumbling, aliceTiming).finished
+.then(() => { alice2.animate(aliceTumbling, aliceTiming).finished } )
+.then(() => alice3.animate(aliceTumbling, aliceTiming));
+
 /* 0. synchronous style implementation 
 */
 // alice1.animate(aliceTumbling, aliceTiming);
@@ -22,9 +26,9 @@ const alice3 = document.querySelector("#alice3");
 /* 1. Promise hell implementation 
 the brackets is optional, see explanation below
 */
-alice1.animate(aliceTumbling, aliceTiming).finished
-.then(() => {alice2.animate(aliceTumbling, aliceTiming).finished.
-  then(() => {alice3.animate(aliceTumbling, aliceTiming)})});
+// alice1.animate(aliceTumbling, aliceTiming).finished
+// .then(() => {alice2.animate(aliceTumbling, aliceTiming).finished.
+//   then(() => {alice3.animate(aliceTumbling, aliceTiming)})});
 
 // with this method, it doesn't matter whether we use brackets or not, because
 // the nested then means we are not relying on the return value of the previous
