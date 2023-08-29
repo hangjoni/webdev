@@ -162,3 +162,8 @@ Project [Portfolio Page](https://hangjoni.github.io/webdev/improved.html)
 
 27 Aug
 Created Streamlit web app for uploading and asking questions about pdf documents [repo here](https://github.com/hangjoni/ask-multiple-pdfs/blob/main/README.md)
+
+## Day 45
+
+29 Aug
+Started A/B Test calculator web app project using Vue and JS. Finished the rough logic and UI [repo here](https://github.com/hangjoni/stat-calc)
