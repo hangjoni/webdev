@@ -167,3 +167,13 @@ Created Streamlit web app for uploading and asking questions about pdf documents
 
 29 Aug
 Started A/B Test calculator web app project using Vue and JS. Finished the rough logic and UI [repo here](https://github.com/hangjoni/stat-calc)
+
+## Day 46, 47, 48
+
+3 Sep
+Learning TailwindCSS. Class names are intuitive but mastering it and getting productive with the right setup, linting and plugins take time
+
+## Day 51
+
+8 Sep
+Deployed a TailwindCSS landing page to Netlify
