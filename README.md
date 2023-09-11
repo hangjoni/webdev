@@ -176,4 +176,9 @@ Learning TailwindCSS. Class names are intuitive but mastering it and getting pro
 ## Day 51
 
 8 Sep
-Deployed a TailwindCSS landing page to Netlify
+Deployed a TailwindCSS landing page to Netlify, [deployed page](https://gleeful-kheer-27e223.netlify.app) [repo](https://github.com/hangjoni/tailwind-clipboard-project)
+
+## Day 54
+
+11 Sep
+Refactored Stat Sig Calculator app to use TailwindCSS (I built this last month using Vue and plain CSS). Deployed using Netlify [deployed page](https://main--heroic-strudel-d753ce.netlify.app/#/)
