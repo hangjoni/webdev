@@ -182,3 +182,8 @@ Deployed a TailwindCSS landing page to Netlify, [deployed page](https://gleeful-
 
 11 Sep
 Refactored Stat Sig Calculator app to use TailwindCSS (I built this last month using Vue and plain CSS). Deployed using Netlify [deployed page](https://main--heroic-strudel-d753ce.netlify.app/#/)
+
+## Day 55
+
+12 Sep
+Finished another TailwindCSS landing page and [deployed](https://loopstudios-green-chi.vercel.app) to Vercel. Also another way to create hamburger menu for the mobile screen using JS.
