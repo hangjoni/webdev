@@ -187,3 +187,23 @@ Refactored Stat Sig Calculator app to use TailwindCSS (I built this last month u
 
 12 Sep
 Finished another TailwindCSS landing page and [deployed](https://loopstudios-green-chi.vercel.app) to Vercel. Also another way to create hamburger menu for the mobile screen using JS.
+
+## Day 57
+
+14 Sep
+User authentication with Node.js [repo here](https://github.com/hangjoni/node-authentication)
+
+## Day 58
+
+16 Sep
+User Roles and permissions with Node.js. Same repo as above
+
+## Day 59
+
+17 Sep
+Finished another Tailwind landing page - see folder mamed "shortly". TODO: deploy
+
+## Day 60
+
+18 Sep
+To select from 20+50 projects and implement those I find interesting
