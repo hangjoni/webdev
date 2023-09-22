@@ -31,3 +31,11 @@ This page documents the resources I found when interacting with people during th
 ## Others
 
 - This thread has a lot of good resource. to check them out https://forum.freecodecamp.org/t/33-yo-from-no-webdev-experience-to-full-stack-developer-in-4-months-thanks-to-fcc/254917
+
+## Tools
+
+to try these
+
+- Tailwind UI
+- [React Tooltip](https://github.com/ReactTooltip/react-tooltip)
+- [screen capture to gif on MacOS](https://www.cockos.com/licecap/)

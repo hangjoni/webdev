@@ -206,4 +206,26 @@ Finished another Tailwind landing page - see folder mamed "shortly". TODO: deplo
 ## Day 60
 
 18 Sep
-To select from 20+50 projects and implement those I find interesting
+Made a motivational quote Chrome extension.
+
+## Day 61
+
+19 Sep
+Learned Object Oriented programming on JS.
+
+## Day 62
+
+20 Sep
+Learned functional programming on JS.
+
+## Day 63
+
+21 Sep
+Watched tutorials on Nuxt.
+
+## Day 64
+
+22 Sep
+Learned Regex.
+
+TODO: To select from 20+50 projects and implement those I find interesting
