@@ -25,8 +25,18 @@ export default defineEventHandler(async (event) => {
   return res;
 });
 
+// const simulateAPI = (prompt) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => resolve("fake.url.com"), 3000);
+//   });
+// };
+
 const simulateAPI = (prompt) => {
-  return new Promise((resolve) =>
-    setTimeout(() => resolve("fake.url.com"), 3000)
-  );
+  return new Promise((resolve, reject) => {
+    const error = {
+      status: 500,
+      message: "cannot generate",
+    };
+    setTimeout(() => reject(error), 1000);
+  });
 };

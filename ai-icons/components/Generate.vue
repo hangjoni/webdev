@@ -72,7 +72,7 @@
       <Pending />
     </div>
     <div v-else>
-      <Display :url="data" />
+      <Display :url="generatedImageLink" />
     </div>
   </form>
 </template>
@@ -81,20 +81,32 @@
 // input values
 const prompt = ref("");
 
-const data = ref("");
+const generatedImageLink = ref("");
 
 let showPending = ref(false);
 
 const generate = async () => {
   showPending.value = true;
   try {
-    const response = await useFetch(`/api/generate?prompt=${prompt.value}`);
-    data.value = response.data;
+    const { error, data } = await useFetch(
+      `/api/generate?prompt=${prompt.value}`,
+      {
+        onResponseError({ request, options, error }) {
+          console.log("handled!");
+          // this works!
+        },
+      }
+    );
+    generatedImageLink.value = data;
+    showPending.value = false;
+    console.log(error.value.data);
+    console.log(error.value.name);
+    console.log(error.value.message);
   } catch (error) {
-    console.error("failed to fetch data");
     showPending.value = false;
+    console.log("failed to fetch data", error);
+    // this code is never reached
   } finally {
-    showPending.value = false;
   }
 };
 </script>
