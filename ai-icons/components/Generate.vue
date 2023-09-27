@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col justify-between bg-slate-50 py-6">
+  <form
+    @submit.prevent="generate"
+    class="flex flex-col justify-between bg-slate-50 py-6"
+  >
     <h1 class="font-bold text-lg py-2">Let's generate your icon</h1>
     <!-- part 1 -->
     <div class="flex flex-col gap-4">
@@ -21,6 +24,7 @@
         type="text"
         placeholder="a rocket spewing smoke"
         class="rounded-lg p-2 text-xs"
+        v-model="prompt"
       />
     </div>
     <!-- part 2 -->
@@ -63,9 +67,22 @@
     <button class="text-white bg-pink-600 rounded-lg px-3 py-1 max-w-xs my-6">
       Generate
     </button>
-  </div>
+    <p>{{ data }}</p>
+    <p>{{ prompt }}</p>
+  </form>
 </template>
 
-<script setup></script>
+<script setup>
+// input values
+const prompt = ref("");
+
+const data = ref("");
+
+const generate = async () => {
+  data.value = await useFetch(`/api/generate?prompt=${prompt.value}`);
+};
+
+//TODO: implement form submit post request
+</script>
 
 <style lang="scss" scoped></style>
