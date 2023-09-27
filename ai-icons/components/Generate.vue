@@ -67,8 +67,13 @@
     <button class="text-white bg-pink-600 rounded-lg px-3 py-1 max-w-xs my-6">
       Generate
     </button>
-    <p>{{ data }}</p>
-    <p>{{ prompt }}</p>
+
+    <div v-if="showPending">
+      <Pending />
+    </div>
+    <div v-else>
+      <Display :url="data" />
+    </div>
   </form>
 </template>
 
@@ -78,11 +83,20 @@ const prompt = ref("");
 
 const data = ref("");
 
-const generate = async () => {
-  data.value = await useFetch(`/api/generate?prompt=${prompt.value}`);
-};
+let showPending = ref(false);
 
-//TODO: implement form submit post request
+const generate = async () => {
+  showPending.value = true;
+  try {
+    const response = await useFetch(`/api/generate?prompt=${prompt.value}`);
+    data.value = response.data;
+  } catch (error) {
+    console.error("failed to fetch data");
+    showPending.value = false;
+  } finally {
+    showPending.value = false;
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
