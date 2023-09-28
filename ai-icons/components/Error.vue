@@ -1,21 +1,19 @@
 <template>
   <div>
-    <img :src="url" class="w-[600px] h-[600px] object-contain" />
-    <p>{{ url }}</p>
+    {{ errorMessage }}
   </div>
 </template>
 
 <script setup>
 import { toRefs } from "vue";
-
 const props = defineProps({
-  url: {
+  errorMessage: {
     type: String,
-    default: "placeholder",
+    default: "some error",
   },
 });
 
-const { url } = toRefs(props);
+const { errorMessage } = toRefs(props);
 </script>
 
 <style lang="scss" scoped></style>

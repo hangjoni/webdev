@@ -71,7 +71,10 @@
     <div v-if="showPending">
       <Pending />
     </div>
-    <div v-else>
+    <div v-if="showError">
+      <Error :errorMessage="errorMessage" />
+    </div>
+    <div v-if="showImage">
       <Display :url="generatedImageLink" />
     </div>
   </form>
@@ -84,29 +87,33 @@ const prompt = ref("");
 const generatedImageLink = ref("");
 
 let showPending = ref(false);
+let showError = ref(false);
+let showImage = ref(false);
+let errorMessage = ref("");
 
 const generate = async () => {
   showPending.value = true;
-  try {
-    const { error, data } = await useFetch(
-      `/api/generate?prompt=${prompt.value}`,
-      {
-        onResponseError({ request, options, error }) {
-          console.log("handled!");
-          // this works!
-        },
-      }
-    );
-    generatedImageLink.value = data;
-    showPending.value = false;
-    console.log(error.value.data);
-    console.log(error.value.name);
-    console.log(error.value.message);
-  } catch (error) {
-    showPending.value = false;
-    console.log("failed to fetch data", error);
-    // this code is never reached
-  } finally {
+  showError.value = false;
+  showImage.value = false;
+  errorMessage.value = "";
+
+  const { error, data } = await useFetch(
+    `/api/generate?prompt=${prompt.value}`,
+    {
+      onResponseError({ request, options, error }) {
+        console.log("handled!");
+        showError.value = true;
+        // this works!
+      },
+    }
+  );
+  generatedImageLink.value = data;
+  showPending.value = false;
+  if (error && error.value) {
+    showError.value = true;
+    errorMessage.value = error.value.message;
+  } else {
+    showImage.value = true;
   }
 };
 </script>

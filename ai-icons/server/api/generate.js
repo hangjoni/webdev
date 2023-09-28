@@ -6,37 +6,44 @@ import "dotenv/config";
 
 export default defineEventHandler(async (event) => {
   // authentication;
-  // const openai = new OpenAI({ apiKey: process.env.OPEN_API_KEY });
+  const openai = new OpenAI({ apiKey: process.env.OPEN_API_KEY });
 
-  // // // query
-  // const { prompt } = getQuery(event);
+  // // query
+  const { prompt } = getQuery(event);
 
-  // const image = await openai.images.generate({
-  //   prompt: prompt,
-  // });
+  const image = await openai.images.generate({
+    prompt: prompt,
+  });
 
-  // console.log("image", image);
-  // console.log("image data", image.data);
+  console.log("image", image);
 
-  // return {
-  //   message: `The response was ${image.data[0].url}`,
-  // };
-  let res = await simulateAPI();
-  return res;
+  return image.data[0].url;
+
+  // use this when developing to save credits
+  // let res = await simulateAPI();
+  // return res;
 });
-
-// const simulateAPI = (prompt) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => resolve("fake.url.com"), 3000);
-//   });
-// };
 
 const simulateAPI = (prompt) => {
   return new Promise((resolve, reject) => {
-    const error = {
-      status: 500,
-      message: "cannot generate",
-    };
-    setTimeout(() => reject(error), 1000);
+    setTimeout(
+      () =>
+        resolve(
+          "https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg?resize=1024:*"
+        ),
+      3000
+    );
   });
 };
+
+// simulate error
+
+// const simulateAPI = (prompt) => {
+//   return new Promise((resolve, reject) => {
+//     const error = {
+//       status: 500,
+//       message: "cannot generate",
+//     };
+//     setTimeout(() => reject(error), 1000);
+//   });
+// };
