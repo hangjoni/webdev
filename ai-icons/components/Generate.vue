@@ -40,13 +40,7 @@
         </div>
       </div>
       <!-- the colors -->
-      <div
-        class="w-7 h-7 rounded-full bg-sky-300 flex items-center justify-center"
-      >
-        <div
-          class="w-6 h-6 rounded-full bg-pink-300 border-4 border-white"
-        ></div>
-      </div>
+      <MultiSelect @selectedColors="handleColors" />
     </div>
     <!-- part 3 -->
     <div class="flex flex-col gap-4">
@@ -90,6 +84,15 @@ let showPending = ref(false);
 let showError = ref(false);
 let showImage = ref(false);
 let errorMessage = ref("");
+let colors = ref([]);
+let query = computed(
+  () => `${prompt.value} in colors ${" ".join(colors.value)}`
+);
+console.log("final query ", query);
+
+const handleColors = (colorsList) => {
+  colors.value = colorsList;
+};
 
 const generate = async () => {
   showPending.value = true;

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <img :src="url" class="w-[600px] h-[600px] object-contain" />
-    <p>{{ url }}</p>
+    <img :src="url" class="w-[400px] h-[400px] object-contain" />
   </div>
 </template>
 
