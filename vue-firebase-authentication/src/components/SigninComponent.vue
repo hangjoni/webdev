@@ -9,45 +9,32 @@
   </div>
 </template>
 
-<script>
-import { ref, defineComponent } from 'vue'
+<script setup>
+import { ref } from 'vue'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { useRouter } from 'vue-router'
 
-export default defineComponent({
-  name: 'RegisterComponent',
-  setup() {
-    const email = ref('')
-    const password = ref('')
-    const errMsg = ref('')
-    const router = useRouter()
+const email = ref('')
+const password = ref('')
+const errMsg = ref('')
+const router = useRouter()
 
-    const signIn = () => {
-      signInWithEmailAndPassword(getAuth(), email.value, password.value)
-        .then((data) => {
-          console.log('Successfully signed in')
-          router.push('/feed')
-        })
-        .catch((error) => {
-          errMsg.value = error.message
-          console.log('error in signin: ', error.message)
-          console.log(errMsg.value !== '')
-        })
-    }
+const signIn = () => {
+  signInWithEmailAndPassword(getAuth(), email.value, password.value)
+    .then((data) => {
+      console.log('Successfully signed in')
+      router.push('/feed')
+    })
+    .catch((error) => {
+      errMsg.value = error.message
+      console.log('error in signin: ', error.message)
+      console.log(errMsg.value !== '')
+    })
+}
 
-    const signInWithGoogle = () => {
-      // Implement Google sign-in logic here
-    }
-
-    return {
-      email,
-      password,
-      signIn,
-      signInWithGoogle,
-      errMsg
-    }
-  }
-})
+const signInWithGoogle = () => {
+  // Implement Google sign-in logic here
+}
 </script>
 
 <style lang="scss" scoped></style>

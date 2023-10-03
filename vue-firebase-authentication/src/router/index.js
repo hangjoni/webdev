@@ -45,10 +45,15 @@ const getCurrentUser = () => {
     const removeListener = onAuthStateChanged(
       getAuth(),
       (user) => {
+        // calling the onAuthStateChanged instance again will unsubscribe
+        // this is used because we only need to check user status once
+        console.log('auth state changed, user is logged in')
         removeListener()
         resolve(user)
       },
       reject
+      // this part is never reached as error ? parameter in onAuthStateChanged is deprecated
+      // if the user is logged out, the user above would be null
     )
   })
 }
@@ -57,7 +62,8 @@ router.beforeEach(async (to, from, next) => {
   const requiresAuth = to.matched.some((record) => record.meta.requiresAuth)
 
   if (requiresAuth) {
-    if (await getCurrentUser) {
+    const user = await getCurrentUser()
+    if (user) {
       console.log('is logged in')
       next()
     } else {

@@ -8,41 +8,29 @@
   </div>
 </template>
 
-<script>
-import { ref, defineComponent } from 'vue'
+<script setup>
+import { ref } from 'vue'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { useRouter } from 'vue-router'
 
-export default defineComponent({
-  name: 'RegisterComponent',
-  setup() {
-    const email = ref('')
-    const password = ref('')
-    const router = useRouter()
+const email = ref('')
+const password = ref('')
+const router = useRouter()
 
-    const register = () => {
-      createUserWithEmailAndPassword(getAuth(), email.value, password.value)
-        .then((data) => {
-          console.log('Successfully registered')
-          router.push('/feed')
-        })
-        .catch((error) => {
-          console.log('error: ', error.message)
-        })
-    }
+const register = () => {
+  createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+    .then((data) => {
+      console.log('Successfully registered')
+      router.push('/feed')
+    })
+    .catch((error) => {
+      console.log('error: ', error.message)
+    })
+}
 
-    const signInWithGoogle = () => {
-      // Implement Google sign-in logic here
-    }
-
-    return {
-      email,
-      password,
-      register,
-      signInWithGoogle
-    }
-  }
-})
+const signInWithGoogle = () => {
+  // Implement Google sign-in logic here
+}
 </script>
 
 <style lang="scss" scoped></style>

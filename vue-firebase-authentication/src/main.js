@@ -7,7 +7,6 @@ import router from './router'
 import { initializeApp } from 'firebase/app'
 
 // This needs to be stored in .env file
-console.log('apikey is ', import.meta.env.VITE_apiKey)
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_apiKey,
   authDomain: import.meta.env.VITE_authDomain,

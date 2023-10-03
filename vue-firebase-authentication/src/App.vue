@@ -25,20 +25,22 @@ const handleSignOut = () => {
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/feed">Feed</RouterLink>
-        <RouterLink to="/signin">Signin</RouterLink>
-        <RouterLink to="/register">Register</RouterLink>
-        <button v-if="isLoggedIn" @click="handleSignOut">Sign out</button>
-      </nav>
-    </div>
-  </header>
+  <div>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/feed">Feed</RouterLink>
+          <RouterLink to="/signin">Signin</RouterLink>
+          <RouterLink to="/register">Register</RouterLink>
+          <button v-if="isLoggedIn" @click="handleSignOut">Sign out</button>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
