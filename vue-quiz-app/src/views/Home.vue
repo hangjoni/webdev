@@ -4,14 +4,18 @@
       <h1>Quizzes</h1>
       <input type="text" placeholder="Search" v-model="searchTerm" />
     </header>
+
     <div class="cards">
-      <Card
-        v-for="cardData in filteredCardsData"
-        :subject="cardData.subject"
-        :question_count="cardData.question_count"
-        :image_link="cardData.image_link"
-        :key="cardData.subject"
-      />
+      <div v-for="cardData in filteredCardsData">
+        <RouterLink :to="`/quiz/${cardData.id}`">
+          <Card
+            :subject="cardData.name"
+            :question_count="cardData.questions.length"
+            :image_link="cardData.img"
+            :key="cardData.id"
+          />
+        </RouterLink>
+      </div>
     </div>
   </div>
 </template>
@@ -19,46 +23,18 @@
 <script setup>
 import Card from "../components/Card.vue";
 import { reactive, ref, computed } from "vue";
+import q from "../data/quizzes.json";
+import { RouterLink } from "vue-router";
 
-const cardsData = reactive([
-  {
-    subject: "Math",
-    question_count: 19,
-    image_link: "/math.jpg",
-  },
-  {
-    subject: "Biology",
-    question_count: 10,
-    image_link: "/biology.jpg",
-  },
-  {
-    subject: "Chemistry",
-    question_count: 8,
-    image_link: "/chemistry.jpg",
-  },
-  {
-    subject: "Physics",
-    question_count: 2,
-    image_link: "/physics.jpg",
-  },
-  {
-    subject: "History",
-    question_count: 4,
-    image_link: "/history.jpg",
-  },
-  {
-    subject: "Psychology",
-    question_count: 7,
-    image_link: "/psychology.jpg",
-  },
-]);
+const cardsData = reactive(q);
 
 let searchTerm = ref("");
 let filteredCardsData = computed(() => {
   return cardsData.filter((item) =>
-    item.subject.toLowerCase().includes(searchTerm.value.toLowerCase())
+    item.name.toLowerCase().includes(searchTerm.value.toLowerCase())
   );
 });
+console.log("filteredCardsData", filteredCardsData.value);
 </script>
 
 <style scoped>
