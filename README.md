@@ -229,3 +229,10 @@ Watched tutorials on Nuxt.
 Learned Regex.
 
 TODO: To select from 20+50 projects and implement those I find interesting
+
+## Day 65-73
+
+29 Sep
+
+- started using Nuxt 3
+- started using Firebase Authentication

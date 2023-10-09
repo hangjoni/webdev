@@ -23,7 +23,7 @@
 <script setup>
 import Card from "../components/Card.vue";
 import { reactive, ref, computed } from "vue";
-import q from "../data/quizzes.json";
+import q from "../data/gptGeneratedData.json";
 import { RouterLink } from "vue-router";
 
 const cardsData = reactive(q);

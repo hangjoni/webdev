@@ -14,7 +14,7 @@
 
 <script setup>
 import { reactive, ref, computed } from "vue";
-import p from "../data/quizzes.json";
+import p from "../data/gptGeneratedData.json";
 import { useRoute } from "vue-router";
 import QuizProgress from "../components/QuizProgress.vue";
 import QuizQuestion from "../components/QuizQuestion.vue";
