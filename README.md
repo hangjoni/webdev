@@ -236,3 +236,8 @@ TODO: To select from 20+50 projects and implement those I find interesting
 
 - started using Nuxt 3
 - started using Firebase Authentication
+
+## Day 74
+
+- read Vue 3 Design Pattern book chapter 6
+- refresh CSS with a frontend challange [notifications-page-main](https://hangjoni.github.io/webdev/notifications-page-main/index.html)
