@@ -241,3 +241,10 @@ TODO: To select from 20+50 projects and implement those I find interesting
 
 - read Vue 3 Design Pattern book chapter 6
 - refresh CSS with a frontend challange [notifications-page-main](https://hangjoni.github.io/webdev/notifications-page-main/index.html)
+
+## Day 75
+
+14 Nov
+
+- built a HackerNews reader - WIP
+- completed a fun CSS challenge https://codepen.io/hangjoni/pen/yLZoWYv

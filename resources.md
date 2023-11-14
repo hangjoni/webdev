@@ -11,7 +11,6 @@ This page documents the resources I found when interacting with people during th
 
 ## Coding challenge
 
-- [Front end challenge](https://github.com/felipefialho/frontend-challenges)
 - Frontend Mentor
 
 ## Projects:
