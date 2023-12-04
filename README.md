@@ -248,3 +248,16 @@ TODO: To select from 20+50 projects and implement those I find interesting
 
 - built a HackerNews reader - WIP
 - completed a fun CSS challenge https://codepen.io/hangjoni/pen/yLZoWYv
+
+## Day 76
+
+15 Nov
+
+- add a thread view in HackerNews reader - wip
+- learned SASS on freeCodeCamp
+
+## Day 77
+
+5 Nov
+
+- learned Bootstrap, completed the content on freeCodeCamp
