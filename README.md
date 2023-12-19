@@ -261,3 +261,9 @@ TODO: To select from 20+50 projects and implement those I find interesting
 5 Nov
 
 - learned Bootstrap, completed the content on freeCodeCamp
+
+## Day 78
+
+19 Dec
+
+- learned jQuery, completed the content on freeCodeCamp
