@@ -267,3 +267,9 @@ TODO: To select from 20+50 projects and implement those I find interesting
 19 Dec
 
 - learned jQuery, completed the content on freeCodeCamp
+
+## Day 79
+
+17 Jan
+
+- Deployed [Hacker News Reader app](https://velvety-chebakia-aaddcf.netlify.app/#/) written in Vue.js
