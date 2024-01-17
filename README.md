@@ -273,3 +273,4 @@ TODO: To select from 20+50 projects and implement those I find interesting
 17 Jan
 
 - Deployed [Hacker News Reader app](https://velvety-chebakia-aaddcf.netlify.app/#/) written in Vue.js
+- Revised CSS for responsive website
