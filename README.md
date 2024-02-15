@@ -280,3 +280,10 @@ TODO: To select from 20+50 projects and implement those I find interesting
 21 Jan
 
 - Start day 1 of 30 days of JS project, [repo here](https://github.com/hangjoni/JavaScript30)
+
+## Day 81
+
+15 Feb 2024
+
+- Finish day 15 of 30 days of JS
+- Started relearning React
