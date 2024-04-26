@@ -1,24 +1,27 @@
 const aliceTumbling = [
-    { transform: 'rotate(0) scale(1)' },
-    { transform: 'rotate(360deg) scale(0)' }
-  ];
-  
+  { transform: "rotate(0) scale(1)" },
+  { transform: "rotate(360deg) scale(0)" },
+];
+
 const aliceTiming = {
   duration: 2000,
   iterations: 1,
-  fill: 'forwards'
-}
+  fill: "forwards",
+};
 
 const alice1 = document.querySelector("#alice1");
 const alice2 = document.querySelector("#alice2");
 const alice3 = document.querySelector("#alice3");
 
-alice1.animate(aliceTumbling, aliceTiming).finished
-.then(() => { alice2.animate(aliceTumbling, aliceTiming).finished } )
-.then(() => alice3.animate(aliceTumbling, aliceTiming));
+// alice1
+//   .animate(aliceTumbling, aliceTiming)
+//   .finished.then(() => {
+//     alice2.animate(aliceTumbling, aliceTiming).finished;
+//   })
+//   .then(() => alice3.animate(aliceTumbling, aliceTiming));
 
-/* 0. synchronous style implementation 
-*/
+/* 0. synchronous style implementation
+ */
 // alice1.animate(aliceTumbling, aliceTiming);
 // setTimeout(() => {alice2.animate(aliceTumbling, aliceTiming)},2000);
 // setTimeout(() => {alice3.animate(aliceTumbling, aliceTiming)}, 4000)
@@ -48,7 +51,7 @@ the last .finished is optional
 // .then(() => alice3.animate(aliceTumbling, aliceTiming));
 
 /* 3. Using async / await with callback
-*/
+ */
 // const myFunc = async (callback) => {
 //   await alice1.animate(aliceTumbling, aliceTiming).finished;
 //   await alice2.animate(aliceTumbling, aliceTiming).finished;
@@ -57,8 +60,8 @@ the last .finished is optional
 
 // myFunc(() => alice3.animate(aliceTumbling, aliceTiming));
 
-/* 4. using async await purely 
-*/
+/* 4. using async await purely
+ */
 // async function animateAlices() {
 //   try {
 //     await alice1.animate(aliceTumbling, aliceTiming).finished;
@@ -70,7 +73,6 @@ the last .finished is optional
 //   }
 // }
 // animateAlices();
-
 
 /* 5. the true Promise hell. 
 Here we write our own promise instead of relying on .finished promise
@@ -123,8 +125,50 @@ note that the second alice cannot be declared in advance! (as it will be execute
 //     }
 //   );
 
-/* this wouldn't work as promise is executed as soon as they are defined 
-*/
+/* 7. using .playState on the animation object to check if the animation is done
+ */
+// const p1 = new Promise((resolve) => {
+//   const animate1 = alice1.animate(aliceTumbling, aliceTiming);
+//   const interval1 = setInterval(() => {
+//     if (animate1.playState == "finished") {
+//       clearInterval(interval1);
+//       resolve();
+//     }
+//   }, 200);
+// });
+
+// p1.then(
+//   () =>
+//     new Promise((resolve) => {
+//       alice2.animate(aliceTumbling, aliceTiming);
+//       setTimeout(() => {
+//         resolve();
+//       }, 2000);
+//     })
+// ).then(() => {
+//   alice3.animate(aliceTumbling, aliceTiming);
+// });
+
+/* 8. */
+const promiseMaker = (el) => {
+  return new Promise((resolve) => {
+    const ani = el.animate(aliceTumbling, aliceTiming);
+    const inter = setInterval(() => {
+      if (ani.playState == "finished") {
+        clearInterval(inter);
+        resolve();
+      }
+    }, 200);
+  });
+};
+const p1 = promiseMaker(alice1);
+
+p1.then(() => promiseMaker(alice2)).then(() =>
+  alice3.animate(aliceTumbling, aliceTiming)
+);
+
+/* this wouldn't work as promise is executed as soon as they are defined
+ */
 // const p1 = new Promise((resolve) => {
 //   alice1.animate(aliceTumbling, aliceTiming);
 //   setTimeout(() => {
@@ -147,7 +191,6 @@ note that the second alice cannot be declared in advance! (as it will be execute
 //     }
 //   );
 
-
 /* this wouldn't work , not without using setTimeout or .finished in the promise 
 because resolve is called immediately after alice1.animate is called without waiting for it to finishes
 */
@@ -157,7 +200,6 @@ because resolve is called immediately after alice1.animate is called without wai
 // });
 
 // alice1AnimatePromise.then(() => alice2.animate(aliceTumbling, aliceTiming));
-
 
 /* what happens if we use a callback function to call resolve? 
 nope the below doesn't work
@@ -176,5 +218,3 @@ with callback-only we still guarantee that the callback is called after alice1An
 // });
 
 // alice1AnimatePromise.then(() => alice2.animate(aliceTumbling, aliceTiming));
-
-
