@@ -287,3 +287,7 @@ TODO: To select from 20+50 projects and implement those I find interesting
 
 - Finish day 15 of 30 days of JS
 - Started relearning React
+
+3 May 2024
+
+- Started CSS challenge #1 [CSS animation and buttons](https://codepen.io/hangjoni/pen/OJGejPd)
