@@ -5,9 +5,12 @@ This page documents the resources I found when interacting with people during th
 - freeCodeCamp.org
 - [DevChallenges.io](https://devchallenges.io/learn/tutorial/web-developer-roadmap-2021) has a great roadmap and video explaining it
 
-## Games
+## CSS
 
 - CSS games
+- [100 CSS Challenges](https://100dayscss.com)
+- [30 day CSS](https://30dayscss.vercel.app/challengesList) and [another 30day CSS](https://github.com/MilenaCarecho/30diasDeCSS)
+- [30 day Codepen](https://bootcamp.uxdesign.cc/i-designed-and-completed-a-30-day-css-challenge-4e45c32f7f8c)
 
 ## Coding challenge
 
